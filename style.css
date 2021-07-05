@@ -1,0 +1,222 @@
+/* Global Variable */
+:root{
+    --white-color:#FFFFFF;;
+    --black-color-57:#575757;
+    --black-color-82:#828282;
+    --black-color-70:#707070;
+    --black-color-67:#676767;
+    --black-color-25:#252525;
+    --orange-color:#FBA24F;
+    --gradient:linear-gradient(88.33deg, #FBA24F -7.64%, #FF1E1E 145.94%);
+    --shadow:0px 2px 30px rgba(252, 143, 73, 0.5);
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.my-container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+
+}
+ul{
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* Navbar Section */
+.header_wrapper{
+    padding: 1rem 0;
+    background-color: var(--black-color-57);
+}
+.logo a{
+    font-size: 3rem;
+    color: var(--white-color);
+    font-weight: 800;
+    letter-spacing: 1px;
+
+}
+.header_wrapper nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.header_wrapper .nav_items ul{
+    display: flex;
+    align-items: center;
+}
+
+.header_wrapper .nav_items li a{
+    font-size: 1.8rem;
+    color: var(--white-color);
+}
+.header_wrapper .nav_items li a:hover{
+    color: var(--orange-color);
+}
+.header_wrapper .nav_items li:not(:last-child){
+    margin-right: 2rem;
+}
+.header_wrapper .nav_items .nav_active a{
+    color: var(--orange-color) ;
+}
+
+/* Hero Section */
+.hero_wrapper{
+    margin-top: 5rem;
+}
+.hero_wrapper .my-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero_content{
+    width: 50%;
+}
+.hero_content h1{
+    font-weight: bold;
+font-size: 6rem;
+line-height: 7.8rem;
+letter-spacing: -0.02rem;
+color: var(--black-color-57);
+margin: 0;
+}
+
+.hero_content h1 span{
+    color: var(--orange-color);
+}
+
+.hero_content p{
+    font-weight: 500;
+font-size: 2rem;
+line-height: 3.2rem;
+letter-spacing: -0.02rem;
+color: var(--black-color-82);
+margin: 2rem 0 4rem 0;
+}
+
+.hero_content a{
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    color: var(--white-color);
+    padding: 1.4rem 2rem;
+    border-radius:10rem;
+    -webkit-border-radius:10rem;
+    -moz-border-radius:10rem;
+    -ms-border-radius:10rem;
+    -o-border-radius:10rem;
+    background: var(--gradient);
+    box-shadow: var(--shadow);
+
+}
+.hero_content a:hover{
+    background: linear-gradient(88.33deg, #FBA24F -7.64%, #f35b5b 145.94%);;
+}
+
+.hero_img img{
+    width: 50rem;
+    height: 55rem;
+}
+
+/* About Section */
+.about_wrapper{
+    margin-top: 5rem;
+    padding-top: 5rem;
+    background-image: url(images/about/about-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.about_wrapper .my-container{
+    display: flex;
+    align-items: center;
+}
+.about_img{
+    width: 50%;
+    text-align: center;
+}
+.about_img img{
+    width: 33.8rem;
+height: 53.6rem;
+}
+.about_content{
+    padding-right: 15%;
+    width: 50%;
+}
+.about_content h3{
+    font-weight: bold;
+font-size: 4rem;
+line-height: 5.4rem;
+color: var(--black-color-70);
+}
+.about_content p{
+    font-weight: normal;
+font-size: 1.8rem;
+line-height: 3.2rem;
+color: var(--black-color-82);
+margin: 2rem 0 6rem 0;
+}
+.about_content a{
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    color: var(--white-color);
+    padding: 1.4rem 2rem;
+    border-radius:10rem;
+    -webkit-border-radius:10rem;
+    -moz-border-radius:10rem;
+    -ms-border-radius:10rem;
+    -o-border-radius:10rem;
+    background: var(--gradient);
+    box-shadow: var(--shadow);
+}
+.about_content a:hover{
+    background: linear-gradient(88.33deg, #FBA24F -7.64%, #f35b5b 145.94%);;
+}
+
+/* Recipies Section */
+.recipie_wrapper{
+    margin-top: 5rem;
+}
+.recipies_title{
+    text-align: center;
+
+}
+.recipies_title h2{
+    font-weight: bold;
+font-size: 3.6rem;
+line-height: 4.4rem;
+color: var(--black-color-67);
+}
+
+.recipies_title p{
+    font-weight: normal;
+font-size: 1.8rem;
+line-height: 2.5rem;
+color: var(--black-color-25);
+padding: 0 22%;
+margin: 2rem 0;
+}
+
+
+
+
+
+
